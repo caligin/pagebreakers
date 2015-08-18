@@ -3,9 +3,7 @@ Layout-Breaker
 
 Oneliner
 ==
-```
-javascript:@@JS_HERE@@
-```
+`javascript:@@JS_HERE@@`
 
 Usage
 ==
