@@ -1,0 +1,8 @@
+LAYOUT_BREAKER_SRC = layout-breaker.js
+README_TEMPLATE = README.md.template
+README = README.md
+PLACEHOLDER = '@@JS_HERE@@'
+URLENCODED_LAYOUT_BREAKER = $(shell cat $(LAYOUT_BREAKER_SRC) | sed -r 's/^\s+//g' | tr -d '\n' | sed -r 's/ /%20/g')
+
+$(README): $(README_TEMPLATE) $(LAYOUT_BREAKER_SRC)
+	cat $(README_TEMPLATE) | sed 's/$(PLACEHOLDER)/$(URLENCODED_LAYOUT_BREAKER)/g' > $(README)
