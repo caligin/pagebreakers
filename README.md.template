@@ -5,9 +5,17 @@ Oneliner
 ==
 `javascript:@@JS_HERE@@`
 
+Goal
+==
+To see how page layout reacts to varying sizes in text content in order to assess robustness of markup & styles.
+
 Usage
 ==
 - Create new bookmark, copy the above oneliner as the boormark link
 - Navigate to the page which layout you want to test
 - Click the boormarklet
 - Profit!!!!11!one!
+
+Known Issues
+==
+- Firefox has an (open bug)[https://bugzilla.mozilla.org/show_bug.cgi?id=866522] that prevents bookmarklets to run on sites with CSP enabled. Just copy the (raw contents)[https://raw.githubusercontent.com/caligin/layout-breaker/master/layout-breaker.js] of `layout.breaker.js` and paste in the js console.
