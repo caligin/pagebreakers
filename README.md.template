@@ -1,50 +1,49 @@
-PageBreakers
-=
+# PageBreakers
+
 Bookmarklets to QA page design
 
-Layout-Breaker
-==
+## Layout-Breaker
+
 `javascript:@@LAYOUT_BREAKER_HERE@@`
 
-Jibberishifier
-==
+## Jibberishifier
+
 `javascript:@@JIBBERISHIFIER_HERE@@`
 
-Usage
-==
+## Usage
 
-Both
-===
+### Both
+
 - Create new bookmark, copy&paste above oneliner as the boormark link
 - Navigate to victim page
 - Click the boormarklet
 - Profit!!!!11!one!
 
-Layout-Breaker
-===
+### Layout-Breaker
+
 Click more times to get more and more text
 
-Goal
-==
+## Goal
 
-Layout-Breaker
-===
+
+### Layout-Breaker
+
 To see how page layout reacts to varying sizes in text content in order to assess robustness of markup & styles.
 
-Jibberishifier
-===
+### Jibberishifier
+
 To see if after removing meaning from the text the visual cues in the page styling are still effective to convey context & direct focus.
 
-Known Issues
-==
+## Known Issues
+
 - Firefox has an (open bug)[https://bugzilla.mozilla.org/show_bug.cgi?id=866522] that prevents bookmarklets to run on sites with CSP enabled. Just copy the (raw contents)[https://raw.githubusercontent.com/caligin/layout-breaker/master/layout-breaker.js] of `layout.breaker.js` and paste in the js console.
 
-Roadmap?
-==
+## Roadmap?
+
 - merge as one bookmarket? First click scrambles, second onwards scramble + increase size. (is it even possible? is it useful? is it good UX?)
 - be able to jibberishify non-ascii characters? (Right-to-left languages, ideogram-based languages, other...?)
 
-Acknowledgements
-==
+## Acknowledgements
+
 - Thanks to everyone on (this reddit thread)[https://www.reddit.com/r/javascript/comments/3hbkl9/usability_dont_make_me_think_and_a_bookmarklet/] to inspire me to write this & help refine the ideas.
 - Thanks (James)[https://github.com/hellojames] for explaining to me the value of this kind of tests.
