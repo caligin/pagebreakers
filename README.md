@@ -42,6 +42,7 @@ To see if after removing meaning from the text the visual cues in the page styli
 
 - merge as one bookmarket? First click scrambles, second onwards scramble + increase size. (is it even possible? is it useful? is it good UX?)
 - be able to jibberishify non-ascii characters? (Right-to-left languages, ideogram-based languages, other...?)
+- scalable makefile? for now minimal deps, but want to urlencode to support firefox, need &-escape to use sed... might want to add tests...
 
 ## Acknowledgements
 
