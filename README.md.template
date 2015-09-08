@@ -36,7 +36,7 @@ To see if after removing meaning from the text the visual cues in the page styli
 
 ## Known Issues
 
-- Firefox has an (open bug)[https://bugzilla.mozilla.org/show_bug.cgi?id=866522] that prevents bookmarklets to run on sites with CSP enabled. Just copy the (raw contents)[https://raw.githubusercontent.com/caligin/layout-breaker/master/layout-breaker.js] of `layout.breaker.js` and paste in the js console.
+- Firefox has an [open bug](https://bugzilla.mozilla.org/show_bug.cgi?id=866522) that prevents bookmarklets to run on sites with CSP enabled. Just copy the [raw contents](https://raw.githubusercontent.com/caligin/layout-breaker/master/layout-breaker.js) of `layout.breaker.js` and paste in the js console.
 
 ## Roadmap?
 
@@ -46,5 +46,5 @@ To see if after removing meaning from the text the visual cues in the page styli
 
 ## Acknowledgements
 
-- Thanks to everyone on (this reddit thread)[https://www.reddit.com/r/javascript/comments/3hbkl9/usability_dont_make_me_think_and_a_bookmarklet/] to inspire me to write this & help refine the ideas.
-- Thanks (James)[https://github.com/hellojames] for explaining to me the value of this kind of tests.
+- Thanks to everyone on [this reddit thread](https://www.reddit.com/r/javascript/comments/3hbkl9/usability_dont_make_me_think_and_a_bookmarklet/) to inspire me to write this & help refine the ideas.
+- Thanks [James](https://github.com/hellojames) for explaining to me the value of this kind of tests.
