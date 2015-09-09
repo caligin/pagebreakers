@@ -4,7 +4,11 @@ Bookmarklets to QA page design
 
 ## Layout-Breaker
 
-`javascript:(function()%20{var%20size_amplification_factor%20=%201.1;var%20possible%20=%20'%20ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';var%20walker%20=%20document.createTreeWalker(document.body,%20NodeFilter.SHOW_TEXT,{%20acceptNode:%20function(n){%20return%20n.parentNode.nodeName%20!==%20'SCRIPT'%20&&%20n.parentNode.nodeName%20!==%20'STYLE'%20&&%20n.nodeValue.trim()%20!=%20'';%20}}%20);while%20(node%20=%20walker.nextNode(),%20node%20!==%20null)%20{var%20new_content%20=%20'';for(var%20i%20=%200;%20i<%20(node.nodeValue.trim().length%20*%20size_amplification_factor);%20i++)%20{new_content%20+=%20possible.charAt(Math.floor(Math.random()%20*%20possible.length));}node.nodeValue%20=%20new_content;}})();`
+`javascript:(function()%20{var%20size_amplification_factor%20=%201.1;var%20possible%20=%20'%20%20%20%20%20ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';var%20walker%20=%20document.createTreeWalker(document.body,%20NodeFilter.SHOW_TEXT,{%20acceptNode:%20function(n){%20return%20n.parentNode.nodeName%20!==%20'SCRIPT'%20&&%20n.parentNode.nodeName%20!==%20'STYLE'%20&&%20n.nodeValue.trim()%20!=%20'';%20}}%20);while%20(node%20=%20walker.nextNode(),%20node%20!==%20null)%20{var%20new_content%20=%20'';for(var%20i%20=%200;%20i<%20(node.nodeValue.trim().length%20*%20size_amplification_factor);%20i++)%20{new_content%20+=%20possible.charAt(Math.floor(Math.random()%20*%20possible.length));}node.nodeValue%20=%20new_content;}})();`
+
+## Layout-Breaker no-spaces version
+
+`javascript:(function()%20{var%20size_amplification_factor%20=%201.1;var%20possible%20=%20'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';var%20walker%20=%20document.createTreeWalker(document.body,%20NodeFilter.SHOW_TEXT,{%20acceptNode:%20function(n){%20return%20n.parentNode.nodeName%20!==%20'SCRIPT'%20&&%20n.parentNode.nodeName%20!==%20'STYLE'%20&&%20n.nodeValue.trim()%20!=%20'';%20}}%20);while%20(node%20=%20walker.nextNode(),%20node%20!==%20null)%20{var%20new_content%20=%20'';for(var%20i%20=%200;%20i<%20(node.nodeValue.trim().length%20*%20size_amplification_factor);%20i++)%20{new_content%20+=%20possible.charAt(Math.floor(Math.random()%20*%20possible.length));}node.nodeValue%20=%20new_content;}})();`
 
 ## Jibberishifier
 
@@ -19,7 +23,7 @@ Bookmarklets to QA page design
 - Click the boormarklet
 - Profit!!!!11!one!
 
-### Layout-Breaker
+### Layout-Breaker (both)
 
 Click more times to get more and more text
 
@@ -29,6 +33,10 @@ Click more times to get more and more text
 ### Layout-Breaker
 
 To see how page layout reacts to varying sizes in text content in order to assess robustness of markup & styles.
+
+### Layout-Breaker no-space
+
+Layout-breaker randomly adds spacing but sometimes a long, non-wrappable text is needed to test specific styles. This version does not generate spacing characters.
 
 ### Jibberishifier
 

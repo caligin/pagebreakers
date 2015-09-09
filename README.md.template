@@ -6,6 +6,10 @@ Bookmarklets to QA page design
 
 `javascript:@@LAYOUT_BREAKER_HERE@@`
 
+## Layout-Breaker no-spaces version
+
+`javascript:@@LAYOUT_BREAKER_NOSPACE_HERE@@`
+
 ## Jibberishifier
 
 `javascript:@@JIBBERISHIFIER_HERE@@`
@@ -19,7 +23,7 @@ Bookmarklets to QA page design
 - Click the boormarklet
 - Profit!!!!11!one!
 
-### Layout-Breaker
+### Layout-Breaker (both)
 
 Click more times to get more and more text
 
@@ -29,6 +33,10 @@ Click more times to get more and more text
 ### Layout-Breaker
 
 To see how page layout reacts to varying sizes in text content in order to assess robustness of markup & styles.
+
+### Layout-Breaker no-space
+
+Layout-breaker randomly adds spacing but sometimes a long, non-wrappable text is needed to test specific styles. This version does not generate spacing characters.
 
 ### Jibberishifier
 
